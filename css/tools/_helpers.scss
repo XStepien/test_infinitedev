@@ -1,0 +1,36 @@
+.lee-jeffries {
+  background: #f0f0f0;
+}
+
+.prefooter {
+  background: #58b6d0;
+}
+
+.docu-newsletter {
+  background: #e2e2e2;
+}
+
+.finalfooter {
+  background: #343635;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {display: block;}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}

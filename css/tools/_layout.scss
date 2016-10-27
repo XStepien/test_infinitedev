@@ -1,0 +1,295 @@
+.header_topbar {
+    height: 113px;
+
+    .list {
+        margin-top: 3em;
+
+        .item, .item a {
+            color: #909090 !important;
+        }
+
+        .item {
+            margin-left: 0.5em !important;
+
+            &:first-child {
+                margin-right: 1em !important;
+            }
+        }
+    }
+}
+
+#header {
+    position: relative;
+    background: url('/images/header_bg.png') no-repeat;
+    background-size: cover;
+    height: 620px;
+
+    nav {
+        background: rgba(255,255,255,0.4);
+
+        .menu {
+            height: 68px;
+            border: none;
+            box-shadow: none;
+            background: inherit;
+
+            .item {
+                text-transform: uppercase;
+                text-align: left;
+                color: #fff;
+                font-weight: bold;
+                line-height: 1.5;
+                justify-content: flex-start;
+                padding-left: 20px !important;
+                margin-right: 10px !important;
+
+                &:before {
+                    display: none;
+                }
+            }
+
+            .item.active, .item:hover {
+                position: relative;
+                color: #18c6a3;
+                background: inherit;
+                border: none;
+
+                &:not(:last-child):before {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    left: 0;
+                    top: calc(50% - 0.75em);
+                    width: 4px;
+                    height: 1.5em;
+                    background: #18c6a3;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    h1 {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+
+        transform: translateY(-50%) translateX(-50%);
+
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        font-size: 60px;
+
+        width: 100%;
+
+        small {
+            font-size: 50px;
+        }
+    }
+}
+
+article {
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &.paralax {
+        height: 300px;
+        max-width: 100%;
+        background: url('/images/bg_paralax.jpg') no-repeat center fixed;
+        background-size: cover;
+    }
+
+    h2 {
+        margin: 20px 0 60px 0 !important;
+        display: table;
+        white-space: nowrap;
+
+        &:after {
+            border-top: 1px solid #ccc;
+            content: '';
+            display: table-cell;
+            position: relative;
+            top: 0.5em;
+            width: 100%;
+        }
+        &:after { left: 4%; }
+
+        span {
+            text-align: center;
+            text-transform: uppercase;
+            color: #ffffff;
+            background: $color-primary;
+            padding: 30px;
+        }
+    }
+    
+    h3 {
+        display: inline-block;
+        background: $color-secondary;
+        text-transform: uppercase;
+        text-align: center;
+        color: #ffffff;
+        padding: 15px;
+    }
+
+    .enavant {
+
+        .image {
+            position: relative;
+
+            span {
+                position: absolute;
+                top: 40px;
+                left: 40px;
+                background: $color-primary;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.2em;
+                padding: 15px 30px;
+            }
+
+            h4 {
+                position: absolute;
+                top: 40%;
+                left: 40px;
+                width: 50%;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 2.5em;
+            }
+        }
+    }
+
+    .card {
+        border : none !important;
+        box-shadow: none !important;
+
+        .content, .meta, .description {
+            padding-left: 0 !important;
+            border-top : none !important;
+        }
+
+        .labels {
+            margin-bottom: 10px;
+        }
+
+        .button.primary {
+            color : $color-primary;
+            border-color: $color-primary;
+            text-transform: uppercase;
+
+        }
+    }
+
+    #hexGrid a:hover {
+        color: #fff;
+    }
+
+    .documentation {
+        padding-right: 20px;
+        text-transform: uppercase;
+
+        .header { font-size: 1em !important; }
+    }
+
+    .form {
+        font-size: 1em !important;
+        margin-top: 21px;
+
+        input[type="text"] {
+            border: none !important;
+            box-shadow: none !important;
+            border-radius: 0 !important;
+            height: 45px;
+        }
+    }
+}
+
+footer {
+    .socialmenu {
+        height: 120px;
+
+        .menu {
+            height: 100%;
+            border: none !important;
+            box-shadow: none !important;
+            background: $color-secondary;
+
+            .item {
+                border: none !important;
+                box-shadow: none !important;
+                color: #ffffff !important;
+                font-size: 1.5em;
+
+                .icon {
+                    font-size: 1.5em;
+                    box-shadow: 0em 0em 0em 0.05em rgba(255, 255, 255, 1) inset !important;
+                }
+                
+                &:before {
+                    background: none;
+                }
+
+                &:hover, &.active {
+                    background: #3a9ab3;
+                }
+            }
+        }
+    }
+
+    .finalfooter {
+        & > .container {
+            height: 350px;
+            margin-top: 1rem;
+        }
+
+        & .grid>.column {
+            padding: 60px 30px 30px 30px !important;
+        }
+
+        & .btn {
+            margin-top: 20px;
+        }
+
+        & h5, & .btn {
+            font-size: 1.7em;
+            color: #ffffff;
+        }
+
+        & h5.footer-header {
+            font-size: 1.2em;
+            position: relative;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+
+            &:after {
+                position: absolute;
+                content: '';
+                width: 30px;
+                height: 2px;
+                left: 0;
+                bottom: -10px;
+                background: #ffffff;
+            }
+        }
+
+        & .link.list {
+            font-size: 1em;
+
+            & a.item {
+                text-transform: uppercase;
+                color : #afafaf;
+                margin-bottom: 10px;
+            }
+
+            & a.item.active, & a.item:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}

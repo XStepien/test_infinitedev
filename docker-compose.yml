@@ -1,0 +1,53 @@
+version: '2'
+
+services:
+
+### Workspace Utilities Container ###########################
+
+    workspace:
+        build:
+            context: ./docker/workspace
+            args:
+                - TZ=Europe/Paris
+        volumes_from:
+            - volumes_source
+        ports:
+            - "22:22"
+        tty: true
+
+### PHP-FPM Container #######################################
+
+    php-fpm:
+        build:
+            context: ./docker/php-fpm
+            dockerfile: Dockerfile-70
+        volumes_from:
+            - volumes_source
+        expose:
+            - "9000"
+        links:
+            - workspace
+
+### Nginx Server Container ##################################
+
+    nginx:
+        build:
+            context: ./docker/nginx
+            args:
+                - PHP_UPSTREAM=php-fpm
+        volumes_from:
+            - volumes_source
+        volumes:
+            - ./logs/nginx/:/var/log/nginx
+        ports:
+            - "8888:80"
+            - "443:443"
+        links:
+            - php-fpm
+
+### Laravel Application Code Container ######################
+
+    volumes_source:
+        image: tianon/true
+        volumes:
+            - .:/var/www/test
