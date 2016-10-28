@@ -28,7 +28,7 @@ export default {
     }
   },
   mounted () {
-    this.$http.get('articles?max=2').then((response) => {
+    this.$http.get('articles?start=1&max=2').then((response) => {
       this.articles = response.data
     }, (response) => {
       console.log('fail', response)

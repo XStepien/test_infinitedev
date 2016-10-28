@@ -2,7 +2,7 @@
   "articles": [
       {
         "date": "08/08/2016",
-        "title": "lorem ipsum dolore",
+        "title": "Un titre d'article",
         "descriptionShort": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus justo quis risus tempus tincidunt. Maecenas porttitor lorem ut dui venenatis consequat. Etiam convallis, neque at tincidunt mollis, elit tortor condimentum neque, egestas consequat leo lectus a nisi. Nam ut ornare sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cum sociis natoque penatibus et.",
         "description": "Sed in pharetra odio. Mauris id neque aliquam, porta magna sed, volutpat purus. Phasellus hendrerit porta dictum. Nullam at lectus ut enim aliquet sollicitudin sed et velit. Sed scelerisque tempus nibh vestibulum maximus. Pellentesque sed semper elit. Sed velit est, cursus id lorem nec, porttitor venenatis magna. Nam augue magna, commodo et magna laoreet, tempus volutpat mi.Proin rhoncus et erat aliquam sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean urna mauris, malesuada non odio id, maximus aliquam justo. Aenean luctus venenatis nibh, ac mollis ligula venenatis vitae. In hac habitasse platea dictumst.",
         "image": "/images/items/1.jpg",
@@ -10,7 +10,7 @@
       },
       {
         "date": "23/10/2016",
-        "title": "Un titre d'article",
+        "title": "Encore Un titre d'article",
         "descriptionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ut, voluptatum. Dicta expedita fugiat incidunt non optio quae recusandae temporibus.",
         "image": "/images/items/2.jpg",
@@ -18,9 +18,9 @@
       },
     {
       "date": "25/12/2016",
-      "title": "Un titre d'article",
-      "descriptionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ut, voluptatum. Dicta expedita fugiat incidunt non optio quae recusandae temporibus.",
+      "title": "Un autre titre d'article",
+      "descriptionShort": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, Mauris id neque aliquam, porta magna sed, volutpat purus.",
+      "description": "Sed in pharetra odio. Mauris id neque aliquam, porta magna sed, volutpat purus. Phasellus hendrerit porta dictum. Nullam at lectus ut enim aliquet sollicitudin sed et velit. Sed scelerisque tempus nibh vestibulum maximus. Pellentesque sed semper elit. Sed velit est, cursus id lorem nec, porttitor venenatis magna",
       "image": "/images/items/3.jpg",
       "categorie": "actualités"
     }

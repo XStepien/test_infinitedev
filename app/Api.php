@@ -24,10 +24,20 @@ class Api {
     {
         $tmpdata = $this->data[$type];
 
+        $max = null;
+        if(isset($_GET['max'])) {
+            $max = $_GET['max'];
+        }
+
+        $start = 0;
+        if(isset($_GET['start'])) {
+            $start = $_GET['start'];
+        }
+
         if(isset($id) && array_key_exists($id, $tmpdata)) {
             $this->data = $tmpdata[intval($id)];
-        } elseif(isset($_GET['max'])) {
-            $this->data = array_slice($tmpdata, 0, $_GET['max']);
+        } elseif(isset($max)) {
+            $this->data = array_slice($tmpdata, $start, $max);
         } else {
             $this->data = $tmpdata;
         }
